@@ -1,30 +1,80 @@
 # QuickSight: Junior Capstone Project for CSE299
 
-**QuickSight** is a Flutter-based application developed as my **Junior Capstone Project** for **CSE299** at **North South University**. The application addresses accessibility challenges by offering innovative features for individuals with visual impairments or color-related difficulties.
+**QuickSight** is a Flutter-based frontend and Python-based Backend application developed as my **Junior Capstone Project** for **CSE299** at **North South University**. The application addresses accessibility challenges by offering innovative features for individuals with visual impairments or color-related difficulties.
 
 ---
 
-## Features
+## Project Overview
 
-### 1. **Colorblindness Simulations**
-QuickSight offers color correction modes to assist users with various types of colorblindness:
-- **Deuteranopia Mode**: Red-green colorblindness optimization.
-- **Tritanopia Mode**: Blue-yellow colorblindness optimization.
-- **Protanopia Mode**: Enhanced for those with difficulty distinguishing red and green hues.
+The primary goal of QuickSight is to provide an accessible and inclusive tool that empowers users to overcome challenges related to colorblindness and visual impairments. QuickSight combines **colorblindness simulation** with advanced **AI-powered image-to-text conversion** and **text-to-speech capabilities** to deliver a practical and impactful solution.
+
+---
+
+## Key Features
+
+### 1. **Colorblindness Color Corrections**
+QuickSight includes Color Corrections modes for three types of colorblindness:
+- **Deuteranopia**: Red-green colorblindness simulation.
+- **Tritanopia**: Blue-yellow colorblindness simulation.
+- **Protanopia**: Red-green hue differentiation difficulty simulation.
+
+These simulations are designed to help users with colorblindness and raise awareness among individuals without such impairments.
+
+---
 
 ### 2. **Quick Sight Tool**
-A core feature that combines cutting-edge AI and text-to-speech technology:
-- **Image-to-Text Conversion**: Uses OpenAI's API to extract textual information from an image.
-- **Text-to-Speech (TTS)**: Converts the extracted text into spoken words for auditory accessibility.
+A powerful feature designed to enhance accessibility for visually impaired individuals:
+- **Image-to-Text Conversion**: Extracts text from images using the OpenAI API.
+- **Text-to-Speech (TTS)**: Converts the extracted text into speech using the `gTTS` (Google Text-to-Speech) library, allowing users to hear the content.
+
+---
+
+## Technologies Used
+
+### Development Tools
+- **Flutter**: Framework for cross-platform development.
+- **Dart**: Programming language used for Flutter.
+- **FastAPI**: Backend framework for managing AI requests.
+
+### APIs and Libraries
+- **OpenAI API**: Used for image-to-text conversion.
+- **Google Text-to-Speech (gTTS)**: Provides text-to-speech functionality.
+- **Camera Plugin**: Captures images for text extraction.
+
+### Python Libraries
+The project leverages several Python libraries for backend functionality. Below are the required libraries and installation instructions.
+
+---
+
+## Python Dependencies
+
+### Required Libraries
+Here is a list of Python libraries you need to install for the backend:
+
+1. **`numpy`**: For numerical computations.
+2. **`pandas`**: For data manipulation and analysis.
+3. **`openai`**: To interact with the OpenAI API.
+4. **`python-dotenv`**: To load environment variables from a `.env` file.
+5. **`fastapi`**: For building the API backend.
+6. **`uvicorn`**: To run the FastAPI app.
+7. **`gtts`**: For converting text to speech.
+8. **`opencv-python`**: For image processing (`cv2` module).
+9. **`python-multipart`**: Required by FastAPI for handling file uploads.
+10. **`requests`**: For making API requests.
+
+### Installation Command
+Install all dependencies using the following command:
+```bash
+pip install numpy pandas openai python-dotenv fastapi uvicorn gtts opencv-python python-multipart requests
+```
+
+### Standard Library
+The following modules are part of Python’s standard library and do not require installation:
+- `os`, `csv`, `base64`, `time`, `datetime`, `logging`, `shutil`.
 
 ---
 
 ## Installation
-
-### Prerequisites
-- Flutter SDK installed ([Get Flutter](https://flutter.dev/docs/get-started/install)).
-- A valid OpenAI API key for accessing GPT functionality.
-- Ensure you have the necessary dependencies listed in the `pubspec.yaml` file.
 
 ### 1. Clone the Repository
 ```bash
@@ -32,80 +82,71 @@ git clone https://github.com/your-username/QuickSight.git
 cd QuickSight
 ```
 
-### 2. Install Dependencies
-Run the following command to install all required dependencies:
+### 2. Install Python Dependencies
+Install the required Python libraries:
+```bash
+pip install -r requirements.txt
+```
+*(Ensure the `requirements.txt` file includes all dependencies listed above.)*
+
+### 3. Install Flutter Dependencies
+Navigate to the Flutter project folder and install the required Flutter dependencies:
 ```bash
 flutter pub get
 ```
 
-### 3. Set Up the `.env` File
-Create a `.env` file in the server directory and add your OpenAI API key:
+### 4. Configure the Environment
+Create a `.env` file in the project root and add your OpenAI API key:
 ```
 OPENAI_API_KEY='your-api-key-here'
 ```
 
 ---
 
-## Usage
+## Usage Instructions
 
-### Running the App
-To start the app, execute:
-```bash
-flutter run
-```
+### Running the Application
+1. Start the FastAPI backend:
+   ```bash
+   uvicorn main:app --reload
+   ```
+2. Launch the Flutter frontend:
+   ```bash
+   flutter run
+   ```
 
-### Using QuickSight
-1. **Colorblindness Simulations**:
-   - Navigate to the settings menu to select a colorblindness mode (Deuteranopia, Tritanopia, or Protanopia).
+### Features Walkthrough
+1. **Colorblindness Color Corrections**:
+   - Navigate to Colorblind Menu.
+   - Choose between Deuteranopia, Tritanopia, or Protanopia modes.
+     
 2. **Quick Sight Tool**:
-   - Use your device camera or upload an image to extract text.
-   - Listen to the extracted text read aloud via the built-in TTS functionality.
+   - Tap the lower end of the screen,
+   - Automatically the phones camera will turn on.
+   - The app will process the text and read it aloud.
+   - Tap the screen to go back to home.
 
 ---
 
-## Dependencies
+## Educational Significance
 
-QuickSight uses the following Flutter dependencies:
-
-### Main Dependencies
-- `provider`
-- `go_router`
-- `flutter_spinkit`
-- `cupertino_icons`
-- `camera`
-- `flutter_launcher_icons`
-- `http`
-- `http_parser`
-- `mime`
-- `just_audio`
-- `path_provider`
-
-### Dev Dependencies
-- `flutter_test`
-- `flutter_lints`
-
-**Note**: Refer to the [pubspec.yaml](pubspec.yaml) file for exact versions.
+QuickSight was developed to address real-world challenges as part of my **CSE299 Junior Capstone Project** at **North South University**. This project embodies the application of classroom learning to create a tangible and impactful solution for improving accessibility.
 
 ---
 
-## Built With
-- **OpenAI API**: Image-to-text conversion.
-- **gTTS (Google Text-to-Speech)**: Text-to-speech functionality.
-- **Flutter**: Frontend framework for mobile development.
+## Acknowledgements
 
----
-
-## Contributing
-We welcome contributions! If you’d like to improve QuickSight, please follow these steps:
-1. Fork the repository.
-2. Create a feature branch (`git checkout -b feature-name`).
-3. Commit your changes (`git commit -m 'Add feature-name'`).
-4. Push the branch (`git push origin feature-name`).
-5. Open a pull request.
+I would like to express my gratitude to:
+- **[Muhammad Shafayat Oshman]**: For providing guidance throughout the project.
+- **[North South University, Department of ECE]**: For offering the opportunity to develop and showcase this project.
+- **OpenAI** and **Google Developers**: For the tools and APIs that made this project possible.
 
 ---
 
 ## Contact
-For questions or support, feel free to reach out at `benaaf2000@gmail.com`.
 
-Enjoy using **QuickSight**! 🌟
+For questions or feedback, please contact me at:
+- 📧 Email: **benaaf2000@gmail.com**
+- 🌐 LinkedIn: [Samiyeel Alim Binaaf](https://linkedin.com/in/samiyeel-alim-binaaf)
+
+**QuickSight** – Empowering Accessibility 🌟
