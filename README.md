@@ -137,8 +137,8 @@ QuickSight was developed to address real-world challenges as part of my **CSE299
 ## Acknowledgements
 
 I would like to express my gratitude to:
-- **[Muhammad Shafayat Oshman]**: For providing guidance throughout the project.
-- **[North South University, Department of ECE]**: For offering the opportunity to develop and showcase this project.
+- **Muhammad Shafayat Oshman**: For providing guidance throughout the project.
+- **North South University, Department of ECE**: For offering the opportunity to develop and showcase this project.
 - **OpenAI** and **Google Developers**: For the tools and APIs that made this project possible.
 
 ---
