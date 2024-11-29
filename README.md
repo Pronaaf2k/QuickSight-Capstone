@@ -39,7 +39,7 @@ flutter pub get
 ```
 
 ### 3. Set Up the `.env` File
-Create a `.env` file in the root directory and add your OpenAI API key:
+Create a `.env` file in the server directory and add your OpenAI API key:
 ```
 OPENAI_API_KEY='your-api-key-here'
 ```
