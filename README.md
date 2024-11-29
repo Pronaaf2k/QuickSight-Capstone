@@ -1,13 +1,13 @@
-# QuickSight
+# QuickSight: Junior Capstone Project for CSE299
 
-QuickSight is an innovative Flutter application designed to enhance accessibility for users. It provides a suite of features for simulating colorblindness and includes a powerful "Quick Sight" tool that converts images into text and reads it aloud using text-to-speech functionality.
+**QuickSight** is a Flutter-based application developed as my **Junior Capstone Project** for **CSE299** at **[Your University Name]**. The application addresses accessibility challenges by offering innovative features for individuals with visual impairments or color-related difficulties.
 
 ---
 
 ## Features
 
 ### 1. **Colorblindness Simulations**
-QuickSight offers simulation modes to assist users with various types of colorblindness:
+QuickSight offers color correction modes to assist users with various types of colorblindness:
 - **Deuteranopia Mode**: Red-green colorblindness optimization.
 - **Tritanopia Mode**: Blue-yellow colorblindness optimization.
 - **Protanopia Mode**: Enhanced for those with difficulty distinguishing red and green hues.
@@ -102,11 +102,6 @@ We welcome contributions! If you’d like to improve QuickSight, please follow t
 3. Commit your changes (`git commit -m 'Add feature-name'`).
 4. Push the branch (`git push origin feature-name`).
 5. Open a pull request.
-
----
-
-## License
-QuickSight is distributed under the [MIT License](LICENSE).
 
 ---
 
