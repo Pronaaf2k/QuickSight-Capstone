@@ -1,6 +1,6 @@
 # QuickSight: Junior Capstone Project for CSE299
 
-**QuickSight** is a Flutter-based application developed as my **Junior Capstone Project** for **CSE299** at **[Your University Name]**. The application addresses accessibility challenges by offering innovative features for individuals with visual impairments or color-related difficulties.
+**QuickSight** is a Flutter-based application developed as my **Junior Capstone Project** for **CSE299** at **North South University**. The application addresses accessibility challenges by offering innovative features for individuals with visual impairments or color-related difficulties.
 
 ---
 
