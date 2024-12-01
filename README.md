@@ -18,7 +18,7 @@ QuickSight includes Color Corrections modes for three types of colorblindness:
 - **Tritanopia**: Blue-yellow colorblindness simulation.
 - **Protanopia**: Red-green hue differentiation difficulty simulation.
 
-These simulations are designed to help users with colorblindness and raise awareness among individuals without such impairments.
+These Correction Filters are designed to help users with colorblindness to distinguish between colors.
 
 ---
 
@@ -78,22 +78,12 @@ The following modules are part of Python’s standard library and do not require
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/QuickSight.git
+git clone https://github.com/Pronaaf2k/QuickSight-Capstone.git
 cd QuickSight
 ```
 
-### 2. Install Python Dependencies
-Install the required Python libraries:
-```bash
-pip install -r requirements.txt
-```
-*(Ensure the `requirements.txt` file includes all dependencies listed above.)*
+### 2. Have Flutter Installed
 
-### 3. Install Flutter Dependencies
-Navigate to the Flutter project folder and install the required Flutter dependencies:
-```bash
-flutter pub get
-```
 
 ### 4. Configure the Environment
 Create a `.env` file in the project root and add your OpenAI API key:
