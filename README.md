@@ -85,7 +85,7 @@ cd QuickSight
 ### 2. Have Flutter Installed
 
 
-### 4. Configure the Environment
+### 3. Configure the Environment
 Create a `.env` file in the project root and add your OpenAI API key:
 ```
 OPENAI_API_KEY='your-api-key-here'
