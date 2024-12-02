@@ -98,7 +98,7 @@ OPENAI_API_KEY='your-api-key-here'
 ### Running the Application
 1. Start the FastAPI backend:
    ```bash
-   uvicorn main:app --reload
+   uvicorn app:app --reload
    ```
 2. Launch the Flutter frontend:
    ```bash
