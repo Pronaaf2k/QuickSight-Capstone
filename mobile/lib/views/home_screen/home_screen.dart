@@ -89,17 +89,6 @@ class HomeView extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 50),
-                const Padding(
-                  padding: EdgeInsets.only(bottom: 16.0),
-                  child: Text(
-                    "(PRESSING THE LOWER VOLUME BUTTON PICKS QUICKSIGHT)",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: Colors.white54,
-                      fontSize: 12,
-                    ),
-                  ),
-                ),
               ],
             ),
           ),
