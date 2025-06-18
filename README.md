@@ -146,6 +146,7 @@ For questions or feedback, please contact me at:
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
 ---
 
 **QuickSight** – Empowering Accessibility 🌟
