@@ -1,5 +1,7 @@
 # QuickSight: Junior Capstone Project for CSE299
 
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 **QuickSight** is a Flutter-based frontend and Python-based Backend application developed as my **Junior Capstone Project** for **CSE299** at **North South University**. The application addresses accessibility challenges by offering innovative features for individuals with visual impairments or color-related difficulties.
 
 ---
@@ -138,5 +140,12 @@ I would like to express my gratitude to:
 For questions or feedback, please contact me at:
 - 📧 Email: **benaaf2000@gmail.com**
 - 🌐 LinkedIn: [Samiyeel Alim Binaaf](https://linkedin.com/in/samiyeel-alim-binaaf)
+
+---
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
 
 **QuickSight** – Empowering Accessibility 🌟
